@@ -6,6 +6,9 @@ header{
     display: flex;
     flex-direction: row;
 }
+header a{
+    color: white;
+}
 main {
 
     background-image:url(/public/images/hero-bg.jpg);
@@ -15,6 +18,9 @@ main {
 footer {
     background-color: black;
     color: white;
+    display: flex;
+    flex-direction: row;
+    flex-basis: 33%;
    
 }
 img{
@@ -48,4 +54,8 @@ img{
 .class{
     display: flex;
     flex-direction: column;
+}
+
+.navbar{
+    background-color: black;
 }

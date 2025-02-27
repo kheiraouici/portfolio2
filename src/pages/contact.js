@@ -1,43 +1,35 @@
-import ProgressBar from 'react-bootstrap/ProgressBar';
+import Form from 'react-bootstrap/Form';
 
-function WithLabelExample() {
-  const now = 90;
-  return <ProgressBar now={now} label={`${now}%`} />;
+function TextControlsExample() {
+  return (
+    <Form>
+      <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+        <Form.Label>Email address</Form.Label>
+        <Form.Control type="email" placeholder="name@example.com" />
+      </Form.Group>
+      <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+        <Form.Label>Nom</Form.Label>
+        <Form.Control as="textarea" rows={3} />
+      </Form.Group>
+      <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+        <Form.Label> votre prénom</Form.Label>
+        <Form.Control as="textarea" rows={3} />
+      </Form.Group>
+      <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+        <Form.Label>votre numéro de téléphone</Form.Label>
+        <Form.Control as="textarea" rows={3} />
+      </Form.Group>
+      <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+        <Form.Label>sujet</Form.Label>
+        <Form.Control as="textarea" rows={3} />
+      </Form.Group>
+      <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+        <Form.Label>votre message</Form.Label>
+        <Form.Control as="textarea" rows={3} />
+      </Form.Group>
+      
+    </Form>
+  );
 }
 
-export default WithLabelExample;
-
-import ProgressBar from 'react-bootstrap/ProgressBar';
-
-function WithLabelExample() {
-  const now = 80;
-  return <ProgressBar now={now} label={`${now}%`} />;
-}
-
-export default WithLabelExample;
-
-import ProgressBar from 'react-bootstrap/ProgressBar';
-
-function WithLabelExample() {
-  const now = 70;
-  return <ProgressBar now={now} label={`${now}%`} />;
-}
-
-export default WithLabelExample;
-
-import ProgressBar from 'react-bootstrap/ProgressBar';
-
-function WithLabelExample() {
-  const now = 60;
-  return <ProgressBar now={now} label={`${now}%`} />;
-}
-
-export default WithLabelExample;
-import ProgressBar from 'react-bootstrap/ProgressBar';
-
-function WithLabelExample() {
-  const now = 50;
-  return <ProgressBar now={now} label={`${now}%`} />;
-}
-
-export default WithLabelExample;
+export default TextControlsExample;
